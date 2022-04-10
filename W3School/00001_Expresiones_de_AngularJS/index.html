@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+    <style type="text/css">
+      .w3-col{
+        height: 500px !important;
+      }
+    </style>
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <div class="w3-container">
+      <h1>
+        Expresiones en AngularJS
+      </h1>
+      <div class="w3-container w3-padding w3-margin" ng-app="App">
+        <div class="w3-row-padding">
+          <div class="w3-col s4 w3-card w3-padding" ng-controller="Ejemplo1">
+            <h2>
+              {{numeroEjemplo}}
+            </h2>
+            <p>
+              Usamos cadenas de texto en las expresiones
+            </p>
+            <p>
+              Expresión de angular : {{ firstName  }} {{ lastName  }}
+            </p>
+          </div>
+          <div class="w3-col s4 w3-card w3-padding" ng-controller="Ejemplo2">
+            <h2>
+              {{numeroEjemplo}}
+            </h2>
+            <p>
+              Usamos números y operadores aritméticos en las expresiones
+            </p>
+            <p>
+              Expresión de angular : {{ 5+5}}
+            </p>
+          </div>
+          <div class="w3-col s4 w3-card w3-padding">
+            <div ng-init="myCol='lightblue'">
+              <p>
+                Ejemplo de la W3 Cambiar color al input
+              </p>
+              <p>
+                Ejemplo de uso e implementar ng-model
+              </p>
+              <input ng-model="myCol" style="background-color:{{myCol}}"/>
+            </div>
+          </div>
+          <div class="w3-col s4 w3-card w3-padding" ng-controller="Ejemplo3">
+            <h2>
+              {{numeroEjemplo}}
+            </h2>
+            <p>
+              Ejemplo modificado  para comprensión de declaraciones del modelo. Valor dinámico usado en propiedades CSS
+            </p>
+            <p>
+              Ejemplo de uso e implementar  ng-model
+            </p>
+            <p>
+              <input ng-model="color" style="background-color:{{color}}"/>
+            </p>
+          </div>
+          <div class="w3-col s4 w3-card w3-padding" ng-controller="Ejemplo4">
+            <h2>
+              {{numeroEjemplo}}
+            </h2>
+            <p>
+              Sumatoria de variables en la expresión
+            </p>
+            <p>
+              Total in dollar: {{ quantity * cost }}
+            </p>
+          </div>
+          <div class="w3-col s4 w3-card w3-padding" ng-controller="Ejemplo5">
+            <h2>
+              {{numeroEjemplo}}
+            </h2>
+            <p>
+              Usamos la directiva ng-bind para desplegar valores usando expresiones y/o variables
+            </p>
+            <p>
+              quantity:
+              <span ng-bind="quantity">
+              </span>
+            </p>
+            <p>
+              cost:
+              <span ng-bind="cost">
+              </span>
+            </p>
+            <p>
+              Total:
+              <span ng-bind="quantity * cost">
+              </span>
+            </p>
+          </div>
+          <div class="w3-col s4 w3-card w3-padding" ng-controller="Ejemplo6">
+            <h2>
+              {{numeroEjemplo}}
+            </h2>
+            <p>
+              Notese que dentro de la directiva ng-bind no se necesitan
+              <span>
+                {
+              </span>
+              <span>
+                {
+              </span>
+              <span>
+                }
+              </span>
+              <span>
+                }
+              </span>
+              dobles para encerar variables y expresiones para  desplegar su valor
+            </p>
+            <p>
+              El nombre es :
+              <span ng-bind="firstName + ' ' + lastName">
+              </span>
+            </p>
+          </div>
+          <div class="w3-col s4 w3-card w3-padding" ng-controller="Ejemplo7">
+            <h2>
+              {{numeroEjemplo}}
+            </h2>
+            <p>
+              Con la directiva  ng-init de declaran variables y sus valores y también pueden declararse objetos
+            </p>
+            <p>
+              Sin embargo declararemos esto en el controlador en esta ocasión. Para saber que es posible y leer condigo mas adelante
+            </p>
+            <p>
+              El nombre es :
+              <span ng-bind="persona.firstName + ' ' + persona.lastName">
+              </span>
+            </p>
+          </div>
+          <div class="w3-col s4 w3-card w3-padding" ng-controller="Ejemplo8">
+            <h2>
+              {{numeroEjemplo}}
+            </h2>
+            <p>
+              Con la directiva  ng-init de declaran variables y sus valores y también pueden declararse objetos
+            </p>
+            <p>
+              Sin embargo declararemos esto en el controlador en esta ocasión. Para saber que es posible y leer condigo mas adelante
+            </p>
+            <p>
+              El valore del indice 6 es  :
+              <span ng-bind="points[6]">
+              </span>
+            </p>
+            <p>
+              El valore del indice 6 es  : {{points[6]}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/angular.min.js" type="text/javascript">
+    </script>
+    <script src="js.js" type="text/javascript">
+    </script>
+  </body>
+</html>
