@@ -3,8 +3,8 @@ var app = angular.module("App", []);
 // ////////////////////////////////////////////////
 app.controller("Ejemplo1", function($scope) {
   $scope.numeroEjemplo = "1";
-  $scope.firstName = "John";
-  $scope.lastName = "Doe";
+  $scope.firstName = "Carlos";
+  $scope.lastName = "Prinmero";
 });
 
 // ////////////////////////////////////////////////
