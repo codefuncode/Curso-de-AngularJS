@@ -3,14 +3,43 @@
   <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+    <style type="text/css">
+      .w3-col{
+        height: 500px !important;
+      }
+    </style>
     <title>
       Document
     </title>
   </head>
   <body>
-    <div ng-app="App" ng-controller="Nombre_Controlador">
-      Name:
-      <input ng-model="name"/>
+    <!--  NOmbre del controlador dentro de la directiva  ng-controller -->
+    <div class="w3-container w3-padding w3-margin" ng-app="App">
+      <div class="w3-row-padding">
+        <!-- //////////////////////////////////////////////////////////////////// -->
+        <!-- // -->
+        <div class="w3-col s4 w3-card w3-padding" ng-controller="Nombre_Controlador">
+          <!-- /////////////////////////// -->
+          <!--  Al definir una directiva {ng-model="xxx"} se la pasa por parámetro en valor de una variable definida con &scope en el controlador del modulo  -->
+          Name:
+          <input class="w3-input" ng-model="name"/>
+        </div>
+        <!-- // -->
+        <div class="w3-col s4 w3-card w3-padding" ng-bind-template="{{firstName}} {{lastName}}" ng-controller="Ejemplo1">
+        </div>
+        <!-- // -->
+        <div class="w3-col s4 w3-card w3-padding" ng-controller="Ejemplo2">
+          <!--  Se define evento con directivas ng-click -->
+          <button class="w3-button w3-green" ng-click="myFunction()">
+            Click me!
+          </button>
+          <p>
+            {{ count }}
+          </p>
+        </div>
+        <!-- /////////////////////////////////////////////////////////////////// -->
+      </div>
     </div>
     <script src="../js/angular.min.js" type="text/javascript">
     </script>
