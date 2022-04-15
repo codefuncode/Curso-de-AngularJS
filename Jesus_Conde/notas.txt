@@ -1,0 +1,80 @@
+00006
+
+
+
+https://www.youtube.com/watch?v=v5MRjk8Lj5o&list=PLEtcGQaT56cgHfdvGguisToK90z321pRl
+
+Listado de directivas 
+https://devdocs.io/angularjs~1.5-ng-directives/
+
+
+Angular.js 1.5 / ng directives
+
+a (directive)
+form (directive)
+input (directive)
+ngApp (directive)
+ngBind (directive)
+ngBindHtml (directive)
+ngBindTemplate (directive)
+ngBlur (directive)
+ngChange (directive)
+ngChecked (directive)
+ngClass (directive)
+ngClassEven (directive)
+ngClassOdd (directive)
+ngClick (directive)
+ngCloak (directive)
+ngController (directive)
+ngCopy (directive)
+ngCsp (directive)
+ngCut (directive)
+ngDblclick (directive)
+ngDisabled (directive)
+ngFocus (directive)
+ngForm (directive)
+ngHide (directive)
+ngHref (directive)
+ngIf (directive)
+ngInclude (directive)
+ngInclude.$includeContentError
+ngInclude.$includeContentLoaded
+ngInclude.$includeContentRequested
+ngInit (directive)
+ngJq (directive)
+ngKeydown (directive)
+ngKeypress (directive)
+ngKeyup (directive)
+ngList (directive)
+ngMaxlength (directive)
+ngMinlength (directive)
+ngModel (directive)
+ngModelOptions (directive)
+ngMousedown (directive)
+ngMouseenter (directive)
+ngMouseleave (directive)
+ngMousemove (directive)
+ngMouseover (directive)
+ngMouseup (directive)
+ngNonBindable (directive)
+ngOpen (directive)
+ngOptions (directive)
+ngPaste (directive)
+ngPattern (directive)
+ngPluralize (directive)
+ngReadonly (directive)
+ngRepeat (directive)
+ngRequired (directive)
+ngSelected (directive)
+ngShow (directive)
+ngSrc (directive)
+ngSrcset (directive)
+ngStyle (directive)
+ngSubmit (directive)
+ngSwitch (directive)
+ngTransclude (directive)
+ngValue (directive)
+script (directive)
+select (directive)
+textarea (directive)
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <!--  <div ng-app ng-controller="EjemploController">
+      El nombre es  {{persona.nombre}} y su apellido es {{persona.apellido}}
+    </div>
+
+    <script type="text/javascript">
+      function EjemploController($scope) {
+        $scope.persona = [{
+          nombre: "Carlos",
+          apellido: "Aleman"
+        }];
+      }
+    </script> -->
+    <!--  Se define la seccion  con ng-app y el contgrolador con ng-controiller -->
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <!--  Directriva repeat  -->
+      <div class="w3-container w3-margin">
+        <div class="w3-row-padding">
+          <div class="w3-col s2 w3-margin-top" ng-repeat="persona in persona">
+            <div class="w3-card-4">
+              <img alt="Alps" class="w3-image" src="{{persona.url}}"/>
+              <div class="w3-container w3-center">
+                <p>
+                  {{persona.nombre}} {{persona.apellido}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/angular.min.js" type="text/javascript">
+    </script>
+    <script src="controller.js" type="text/javascript">
+    </script>
+  </body>
+</html>

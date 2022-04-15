@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <!--  Directriva repeat  -->
+      <div class="">
+        <h2>
+          Persona tiene un tamaño de {{size.persona}} elementos
+        </h2>
+        <div ng-repeat="persona in persona">
+          <p>
+            {{persona.nombre}} {{persona.apellido}}
+          </p>
+        </div>
+      </div>
+      <br/>
+      <p>
+        =================================
+      </p>
+      <br/>
+      <div class="">
+        <h2>
+          Persona1 tiene un tamaño de {{size.persona1}} elementos
+        </h2>
+        <div ng-repeat="x in persona1">
+          <p>
+            {{x.nombre}} {{x.apellido}}
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="../js/angular.min.js" type="text/javascript">
+    </script>
+    <!-- El script de AngularJs 1.5 puede ser un fichero externo -->
+    <script src="controiler.js" type="text/javascript">
+    </script>
+  </body>
+</html>
