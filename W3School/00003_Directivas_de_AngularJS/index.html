@@ -8,6 +8,12 @@
       .w3-col{
         height: 500px !important;
       }
+      body{
+        /*background-color: black;*/
+      } 
+       body *{
+        /*background-color: white;*/
+      }
     </style>
     <title>
       Document
@@ -15,21 +21,23 @@
   </head>
   <body>
     <!--  NOmbre del controlador dentro de la directiva  ng-controller -->
-    <div class="w3-container w3-padding w3-margin" ng-app="App">
+    <div class="w3-container w3-margin w3-padding-large" ng-app="App">
       <div class="w3-row-padding">
         <!-- //////////////////////////////////////////////////////////////////// -->
         <!-- // -->
-        <div class="w3-col s4 w3-card w3-padding" ng-controller="Nombre_Controlador">
+        <div class="w3-col s4 w3-card w3-padding-large" ng-controller="Nombre_Controlador">
           <!-- /////////////////////////// -->
           <!--  Al definir una directiva {ng-model="xxx"} se la pasa por parámetro en valor de una variable definida con &scope en el controlador del modulo  -->
           Name:
           <input class="w3-input" ng-model="name"/>
         </div>
-        <!-- // -->
-        <div class="w3-col s4 w3-card w3-padding" ng-bind-template="{{firstName}} {{lastName}}" ng-controller="Ejemplo1">
+        <!-- //////////////////////////// Ejemplo1 ////////////////////////////////////// -->
+        <div class="w3-col s4 w3-card w3-padding-large" ng-bind-template="{{firstName}} {{lastName}}" ng-controller="Ejemplo1">
         </div>
-        <!-- // -->
-        <div class="w3-col s4 w3-card w3-padding" ng-controller="Ejemplo2">
+        <!-- //////////////////////////// Ejemplo1 ////////////////////////////////////// -->
+        <!-- ========= -->
+        <!-- //////////////////////////// Ejemplo2 ////////////////////////////////////// -->
+        <div class="w3-col s4 w3-card w3-padding-large" ng-controller="Ejemplo2">
           <!--  Se define evento con directivas ng-click -->
           <button class="w3-button w3-green" ng-click="myFunction()">
             Click me!
@@ -38,7 +46,7 @@
             {{ count }}
           </p>
         </div>
-        <!-- /////////////////////////////////////////////////////////////////// -->
+        <!-- //////////////////////////// Ejemplo2 ////////////////////////////////////// -->
       </div>
     </div>
     <script src="../js/angular.min.js" type="text/javascript">

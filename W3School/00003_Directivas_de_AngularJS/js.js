@@ -18,3 +18,18 @@ app.controller('Ejemplo2', function($scope) {
     $scope.count++;
   }
 });
+
+// app.directive("DirectivaComentario", function() {
+//   return {
+//     restrict: "M",
+//     replace: true,
+//     template: "<div class='w3-col s4 w3-card w3-padding-large' >" +
+//       "<button class='w3-button w3-green' ng-click='myFunction()'>" +
+//       "Click me!" +
+//       "</button>" +
+//       "<p>" +
+//       "Comentario :)" +
+//       "</p>" +
+//       "</div>"
+//   };
+// });
