@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+    <style type="text/css">
+      .w3-col{
+        height: 500px !important;
+      }
+      body{
+        /*background-color: black;*/
+      } 
+       body *{
+        /*background-color: white;*/
+      }
+
+      /* 
+      ng-valid se establece si el formulario es válido.
+      ng-invalid se establece si el formulario no es válido.
+      ng-pending se establece si el formulario está pendiente.
+      ng-pristine se establece si el formulario es prístino. NO se ha tocado en su estado inicial
+      ng-dirty se establece si el formulario está sucio.
+      ng-submitted se establece si se envió el formulario.
+      */
+      input.ng-empty {
+      background-color: white;
+      }      
+      input.ng-not-empty {
+      background-color: green;
+      }      
+      input.ng-touched {
+      background-color: yellow;
+      }      
+      input.ng-untouched {
+      background-color: orange;
+      }      
+      input.ng-valid {
+      background-color: violet;
+      }      
+      input.ng-invalid {
+      background-color: red;
+      }      
+      input.ng-dirty {
+      background-color: lightblue;
+      }      
+      input.ng-pending {
+      background-color: powderblue;
+      }
+      input.ng-pristine {
+      background-color: mediumvioletred;
+      }
+    </style>
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <div class="w3-container w3-margin w3-padding-large" ng-app="App">
+      <div class="w3-row-padding">
+        <div class="w3-col s4 w3-card w3-padding-large" ng-controller="Controlador1">
+          Name:
+          <input ng-model="name"/>
+          <p>
+            {{name}}
+          </p>
+        </div>
+        <div class="w3-col s4 w3-card w3-padding-large">
+          <form name="Formulario1">
+            Email:
+            <input name="direccion1" ng-model="text" type="email"/>
+            <span ng-show="Formulario1.direccion1.$error.email">
+              Not a valid e-mail address
+            </span>
+          </form>
+        </div>
+        <div class="w3-col s4 w3-card w3-padding-large">
+          <!--  NOmbre del formulario  es una variable en si  y se usa para saber junto con el nombre del input para validar datos y/o acciones del usuario -->
+          <form name="Formulario2" ng-init="myText = 'post@myweb.com'">
+            Email:
+            <input name="direccion2" ng-model="myText" required="" type="email"/>
+            <h1>
+              Status
+            </h1>
+            {{Formulario2.direccion2.$valid}}
+            {{Formulario2.direccion2.$dirty}}
+            {{Formulario2.direccion2.$touched}}
+          </form>
+        </div>
+        <div class="w3-col s4 w3-card w3-padding-large">
+          <form name="Formulario3">
+            Enter your name:
+            <input name="myName" ng-model="myText1" required=""/>
+          </form>
+        </div>
+        <div class="w3-col s4 w3-card w3-padding-large">
+        </div>
+        <!-- <div class="w3-col s4 w3-card w3-padding-large" ng-controller="xxxxxxxxxx">
+        </div> -->
+        <!-- <div class="w3-col s4 w3-card w3-padding-large" ng-controller="xxxxxxxxxx">
+        </div> -->
+        <!-- <div class="w3-col s4 w3-card w3-padding-large" ng-controller="xxxxxxxxxx">
+        </div> -->
+        <!-- <div class="w3-col s4 w3-card w3-padding-large" ng-controller="xxxxxxxxxx">
+        </div> -->
+        <!-- <div class="w3-col s4 w3-card w3-padding-large" ng-controller="xxxxxxxxxx">
+        </div> -->
+        <!-- <div class="w3-col s4 w3-card w3-padding-large" ng-controller="xxxxxxxxxx">
+        </div> -->
+        <!-- <div class="w3-col s4 w3-card w3-padding-large" ng-controller="xxxxxxxxxx">
+        </div> -->
+        <!-- <div class="w3-col s4 w3-card w3-padding-large" ng-controller="xxxxxxxxxx">
+        </div> -->
+        <!-- <div class="w3-col s4 w3-card w3-padding-large" ng-controller="xxxxxxxxxx">
+        </div> -->
+        <!-- <div class="w3-col s4 w3-card w3-padding-large" ng-controller="xxxxxxxxxx">
+        </div> -->
+        <!-- <div class="w3-col s4 w3-card w3-padding-large" ng-controller="xxxxxxxxxx">
+        </div> -->
+        <!-- <div class="w3-col s4 w3-card w3-padding-large" ng-controller="xxxxxxxxxx">
+        </div> -->
+      </div>
+    </div>
+    <script src="../js/angular.min.js" type="text/javascript">
+    </script>
+    <script src="js.js" type="text/javascript">
+    </script>
+  </body>
+</html>
