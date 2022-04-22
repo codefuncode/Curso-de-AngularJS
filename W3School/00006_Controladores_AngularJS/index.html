@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <!-- ////////////////////////////////////////////////////// -->
+    <!--  Implementación con prototipo  -->
+        <div class="" ng-app="App">
+      <div id="ctrl-as-exmpl" ng-controller="nombreControlador as nuevoNombrerObjetoControlador">
+        <label>
+          Name:
+          <input ng-model="nuevoNombrerObjetoControlador.name" type="text"/>
+        </label>
+        <button ng-click="nuevoNombrerObjetoControlador.greet()">
+          greet
+        </button>
+        <br/>
+        Contact:
+        <div>
+          <div ng-repeat="contact in nuevoNombrerObjetoControlador.contacts">
+            <select aria-label="Contact method" id="select_{{$index}}" ng-model="contact.type">
+              <option>
+                phone
+              </option>
+              <option>
+                email
+              </option>
+            </select>
+            <input aria-labelledby="select_{{$index}}" ng-model="contact.value" type="text"/>
+            <button ng-click="nuevoNombrerObjetoControlador.clearContact(contact)">
+              clear
+            </button>
+            <button aria-label="Remove" ng-click="nuevoNombrerObjetoControlador.removeContact(contact)">
+              X
+            </button>
+          </div>
+          <div>
+            <button ng-click="nuevoNombrerObjetoControlador.addContact()">
+              add
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+    <!--  Implementación con @scope -->
+<!--     <div class="" ng-app="App">
+      <div id="ctrl-as-exmpl" ng-controller="controlador">
+        <label>
+          Name:
+          <input ng-model="name" type="text"/>
+        </label>
+        <button ng-click="greet()">
+          greet
+        </button>
+        <br/>
+        Contact:
+        <div>
+          <div ng-repeat="contact in contacts">
+            <select aria-label="Contact method" id="select_{{$index}}" ng-model="contact.type">
+              <option>
+                phone
+              </option>
+              <option>
+                email
+              </option>
+            </select>
+            <input aria-labelledby="select_{{$index}}" ng-model="contact.value" type="text"/>
+            <button ng-click="clearContact(contact)">
+              clear
+            </button>
+            <button aria-label="Remove" ng-click="removeContact(contact)">
+              X
+            </button>
+          </div>
+          <div>
+            <button ng-click="addContact()">
+              add
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- ////////////////////////////////////////////////////// -->
+    <script src="../js/angular.min.js" type="text/javascript">
+    </script>
+    <script src="js.js" type="text/javascript">
+    </script>
+  </body>
+</html>
