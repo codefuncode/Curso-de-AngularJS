@@ -1,1 +1,24 @@
 https://www.ubuntupit.com/how-to-install-and-configure-angular-cli-on-linux-distributions/
+
+
+C:/wamp64/www/Proyectos/appcomercial/Curso-de-AngularJS/notas.txt
+
+
+https://www.tutorialspoint.com/angularjs/index.htm
+https://www.javatpoint.com/angularjs-tutorial
+https://www.w3schools.com/angular/default.asp
+https://www.tutorialsteacher.com/angularjs/angularjs-tutorials
+https://medium.com/quick-code/top-tutorials-to-learn-angular-js-for-beginners-2f401566d5f1
+
+https://www.tutlane.com/tutorials
+
+
+http://html5index.org/ECMAScript%20-%20Array.html#splice
+
+http://html5index.org/index.html
+
+https://www.tutlane.com/tutorial/angularjs
+ 
+
+
+ W3School/00006_Controladores_AngularJS/index.html W3School/00006_Controladores_AngularJS/js.js W3School/00006_Controladores_AngularJS/notas.txt

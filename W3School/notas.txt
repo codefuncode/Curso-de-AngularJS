@@ -1,0 +1,42 @@
+AngularJS Expressions
+AngularJS Modules
+AngularJS Directives
+AngularJS Model
+AngularJS Data Binding
+AngularJS Controllers
+AngularJS Scopes
+AngularJS Filters
+AngularJS Services
+AngularJS Http
+AngularJS Tables
+AngularJS Select
+AngularJS SQL
+AngularJS DOM
+AngularJS Events
+AngularJS Forms
+AngularJS Validation
+AngularJS API
+AngularJS W3.CSS
+AngularJS Includes
+AngularJS Animations
+AngularJS Routing
+AngularJS Application
+
+
+https://www.w3schools.com/angular/default.asp
+
+https://code.angularjs.org/1.5.0-rc.2/docs/api
+https://www.tutorialspoint.com/angularjs/index.htm
+https://www.javatpoint.com/angularjs-tutorial
+https://www.tutlane.com/tutorial/angularjs
+
+https://www.tutorialsteacher.com/angularjs/angularjs-tutorials
+https://medium.com/quick-code/top-tutorials-to-learn-angular-js-for-beginners-2f401566d5f1
+
+ Listado de directivas
+
+ https://devdocs.io/angularjs~1.5-ng-directives/
+
+
+
+Tutorial
